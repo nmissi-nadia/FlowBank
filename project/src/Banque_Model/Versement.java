@@ -1,19 +1,10 @@
-/**
- * 
- */
 package Banque_Model;
 
-/**
- * @author youco
- *
- */
-public class Versement extends Operation{
+public class Versement extends Operation {
+    private String source;
 
-	/**
-	 * 
-	 */
-	public Versement() {
-		// TODO Auto-generated constructor stub
-	}
-
+    public Versement(double montant, String source) {
+        super(montant);
+        this.source = source;
+    }
 }
