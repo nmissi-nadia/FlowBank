@@ -77,13 +77,13 @@ java -cp bin presentation.Main
 2. Générer le `.jar` :
 
    ```bash
-   jar cfm MonProjet.jar MANIFEST.MF -C bin .
+   jar cfm FlowBank.jar MANIFEST.MF -C bin .
    ```
 
 3. Exécuter le `.jar` :
 
    ```bash
-   java -jar MonProjet.jar
+   java -jar FlowBank.jar
    ```
 
 ---
@@ -92,9 +92,9 @@ java -cp bin presentation.Main
 
 ### Exemple 1 : Créer un compte
 
-```
+
 ![Menu](image.png)
-```
+
 
 ### Exemple 2 : Retrait avec solde insuffisant
 
