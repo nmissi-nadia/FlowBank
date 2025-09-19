@@ -93,12 +93,7 @@ java -cp bin presentation.Main
 ### Exemple 1 : Créer un compte
 
 ```
-=== Menu Principal ===
-1. Creer un compte
-2. Consulter le solde
-3. Faire un depot
-4. Faire un retrait
-0. Quitter
+![Menu](image.png)
 ```
 
 ### Exemple 2 : Retrait avec solde insuffisant
@@ -106,6 +101,7 @@ java -cp bin presentation.Main
 ```
 Erreur : Solde insuffisant pour effectuer cette operation.
 ```
+![Retrait insuffisent](image-1.png)
 
 ---
 
