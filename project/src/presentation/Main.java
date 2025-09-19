@@ -1,4 +1,5 @@
-import Banque_Model.*;
+package presentation;
+import metier.*;
 import java.util.*;
 
 public class Main {

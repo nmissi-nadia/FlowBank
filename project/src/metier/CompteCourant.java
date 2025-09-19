@@ -1,4 +1,4 @@
-package Banque_Model;
+package metier;
 
 public class CompteCourant extends Compte {
     private double decouvert;

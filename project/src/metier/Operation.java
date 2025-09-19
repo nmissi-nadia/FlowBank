@@ -1,4 +1,4 @@
-package Banque_Model;
+package metier;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

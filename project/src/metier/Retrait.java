@@ -1,4 +1,4 @@
-package Banque_Model;
+package metier;
 
 public class Retrait extends Operation {
     private String destination;

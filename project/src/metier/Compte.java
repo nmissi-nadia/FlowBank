@@ -1,4 +1,4 @@
-package Banque_Model;
+package metier;
 
 import java.util.ArrayList;
 import java.util.List;

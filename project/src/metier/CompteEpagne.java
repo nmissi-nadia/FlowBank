@@ -1,4 +1,4 @@
-package Banque_Model;
+package metier;
 
 public class CompteEpagne extends Compte {
     private double tauxInteret;
