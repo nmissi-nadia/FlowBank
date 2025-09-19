@@ -1,6 +1,4 @@
-### FlowBank
-
-#  Gestion de Comptes Bancaires
+#  FlowBank:Gestion de Comptes Bancaires
 
 ##  Description
 
