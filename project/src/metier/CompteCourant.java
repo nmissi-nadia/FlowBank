@@ -1,5 +1,7 @@
 package metier;
 
+import utilitaire.Validation;
+
 public class CompteCourant extends Compte {
     private double decouvert;
 
@@ -10,20 +12,22 @@ public class CompteCourant extends Compte {
 
     @Override
     public void retirer(double montant, String destination) {
+        Validation.validerMontant(montant);
         if (this.solde - montant >= -this.decouvert) {
             this.solde -= montant;
             operations.add(new Retrait(montant, destination));
         } else {
-            System.out.println("Retrait refuse : depasse le decouvert autorise !");
+            throw new utilitaire.BanqueException("Retrait impossible : depassement du decouvert autorise");
         }
     }
 
     @Override
     public double calculerInteret() {
-        return 0; // pas d'intérêt
+        return 0;
     }
+
     @Override
     public void afficherDetails() {
-        System.out.println("Code : " + code + " | Solde = " + solde + " |decouvert = "+ decouvert );
+        System.out.println("Compte Courant [code=" + code + ", solde=" + solde + ", decouvert=" + decouvert + "]");
     }
 }

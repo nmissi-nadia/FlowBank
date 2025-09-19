@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import utilitaire.Validation;
+
 public abstract class Compte {
     protected String code;
     protected double solde;
@@ -34,6 +36,7 @@ public abstract class Compte {
     }
 
     public void verser(double montant, String source) {
+        Validation.validerMontant(montant); 
         solde += montant;
         operations.add(new Versement(montant, source));
     }
